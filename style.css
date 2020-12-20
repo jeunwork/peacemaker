@@ -17,10 +17,11 @@ li {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:8px 20px; 
+    padding:8px 24px; 
   
 }
 .navbar_logo {
+    
 }
 .navbar_logo a{
     display: block;
@@ -60,7 +61,8 @@ li {
     display:none;
     position:absolute;
     align-items: center;
-    right:32px;
+    right: 24px;
+    top: 16px;
     font-size:24px;
     color:#104d60;
 }
@@ -70,9 +72,18 @@ li {
     
 }
 .main h4 {
+    display: inline;
     color: #104d60;
     padding-left: 300px; 
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: bold;
+}
+.main span {
+    color: #104d60;
+    padding-left: 200px; 
     font-size: 20px;
+    font-weight: bold;
 }
 .main a {
     display: block;
@@ -86,8 +97,9 @@ li {
     
 }
 .classes {
+    display: inline-block;
     width: 100%;
-    height: 600px;
+    height: 550px;
 }
 .classes h2 {
     color: #104d60;
@@ -103,15 +115,24 @@ li {
 .classes  ul li {
     display: block;
     width: 300px;
-    height: 400px;
+    height: 350px;
     border: 2px solid #dfecf3;
     border-radius: 10px; 
     text-align: center;
     padding-top: 10px;
-    font-weight: bold;
+    
+    
 }
 .classes  ul li:hover {
     opacity: 0.8;
+}
+.classes  li a h4 {
+    display: inline;
+
+}
+.classes  li a span{
+    
+    font-size: 14px; 
 }
 .classes  li a img {
     width: 300px; 
@@ -121,7 +142,7 @@ li {
 .classes .view a {
     display: block;
     text-align: center;
-    margin: 10px 0 20px 0;
+
 }
 .classes .view a:hover {
     text-decoration: underline;
@@ -201,6 +222,7 @@ footer {
         flex-direction:column;
         align-items:center;
         width:100%;
+        
     }
     .navbar_menu li {
         width:100%;
@@ -217,5 +239,29 @@ footer {
     .navbar_menu.active,
     .navbar_icons.active {
         display:flex;
+    }
+    .main h4 {
+        padding-left: 300px; 
+        font-size: 20px;
+        line-height: 48px;
+        font-weight: bold;
+}
+    .main span {
+        padding-left: 200px; 
+        font-size: 16px;
+        font-weight: bold;
+}
+    .main a {
+        text-align: center;
+        width: 50%;
+        border-radius: 50%;
+    }
+    .classes ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .classes ul li {
+        margin-bottom: 30px;
+        
     }
 }
