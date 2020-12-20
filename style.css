@@ -64,7 +64,61 @@ li {
     right: 24px;
     top: 16px;
     font-size:24px;
-    color:#104d60;
+    color: #104d60;
+}
+.modal {
+    display: none;
+    z-index: 900;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+}
+.modal_up {
+    z-index: 1000;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #104d60;
+    background: #fff;
+}
+.uptitle {
+    text-align: center;
+    padding: 20px;
+    color: #104d60;
+    font-weight: bold;
+}
+.upbody {
+    text-align: center;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 30px;
+    color: #104d60;
+    font-weight: bold;
+}
+.upbody [type="text"] {
+    width: 230px;
+    height: 20px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    
+}
+.upbody [type="submit"] {
+  margin: 10px;
+}
+.signup {
+    font-size: 12px;
+    text-align: center;
+    color: #104d60;
+    padding: 20px 0 0;
+}
+.signup a {
+    font-weight: bold;
+    color: darkred;
 }
 .main {
     display: flex;
@@ -80,6 +134,8 @@ li {
     font-size: 24px;
     line-height: 48px;
     font-weight: bold;
+    position: relative;
+    
 }
 .main span {
     color: #104d60;
@@ -97,13 +153,7 @@ li {
     border-radius: 50%;
     
 }
-@keyframes .main h4 {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-.main h4 {
-    animation: opacity 5s infinite;
-}
+
 .classes {
     display: inline-block;
     width: 100%;
@@ -181,14 +231,14 @@ li {
     font-size: 20px;
 
 }
-.news input { 
+.news [type="text"] { 
     width: 180px;
     height: 20px;
     padding: 0 0 0 4px;
     font-size: 12px;
 }
-.news button {
-    width: 70px;
+.news [type="submit"] {
+    width: 60px;
     height: 23px;
     font-size: 12px;
     margin-top: 1px;
