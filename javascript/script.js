@@ -15,3 +15,10 @@ const viewmore = document.querySelector('.viewmore');
 toogleBtn.addEventListener('click', function () {
         viewmore.classList.toggle('active');
     });
+/*login modal */
+$(".navbar_menu li:last-child").click(function(){
+       $(".modal").css("display","block"); 
+    });
+    $(".close a").click(function(){
+       $(".modal").css("display","none"); 
+    });
