@@ -67,6 +67,8 @@ li {
     color:#104d60;
 }
 .main {
+    display: flex;
+    align-items: center;
     background: #dfecf3;
     padding: 10px 0 80px 0;
     
@@ -86,12 +88,10 @@ li {
     font-weight: bold;
 }
 .main a {
-    display: block;
     width: 500px; 
     margin: 0 auto;
 }
 .main a img {
-    
     width: 100%;
     border-radius: 50%;
     
@@ -240,7 +240,7 @@ footer {
     .navbar_icons.active {
         display:flex;
     }
-    .main h4 {
+     .main h4 {
         padding-left: 300px; 
         font-size: 20px;
         line-height: 48px;
